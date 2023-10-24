@@ -6,4 +6,5 @@ directory_path = os.path.join(current_directory, 'files')
 
 result = process_files(directory_path)
 
-write_file('output.txt', result)
+if result is not None:
+    write_file('output.txt', result)
